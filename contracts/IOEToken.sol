@@ -7,4 +7,8 @@ contract IOEToken is ERC20Capped {
     string public name = "Internet of Everything";
     string public symbol = "IOE";
     uint8 public decimals = 9;
+
+    constructor (uint256 cap) public ERC20Capped(cap) {
+        decimals = 9;
+    }
 }
